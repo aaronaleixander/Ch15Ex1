@@ -10,11 +10,11 @@ class Book : public Media
 {
 private:
     std::string author;
-    std::string format;
+    
 public:
     Book(std::string name = "", double price = 0.0,
         int disc_pct = 0, std::string author_param = "", std::string format = "") :
-        Media(name, price) {
+        Media(name, price, disc_pct) {
         author = author_param;
         this->format = format;
     }
